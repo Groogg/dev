@@ -1,0 +1,22 @@
+[
+  {
+    "context": "EmptyPane || SharedScreen || vim_operator == none && !VimWaiting && vim_mode != insert",
+    "bindings": {
+      "space s o": "projects::OpenRecent",
+      "space s t": "tab_switcher::Toggle",
+      "space s f": "file_finder::Toggle",
+      "space s r": "search::ToggleReplace",
+      "space r": "task::Rerun",
+      "space r e": ["task::Rerun", { "reevaluate_context": true }]
+    }
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "g r a": "editor::FindAllReferences",
+      "g a": "editor::ToggleCodeActions",
+      "g r": "editor::Rename",
+      "space w": "workspace::Save"
+    }
+  }
+]

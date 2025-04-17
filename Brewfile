@@ -1,0 +1,13 @@
+brew 'git'
+brew 'zsh'
+brew 'make'
+brew 'fzf'
+
+cask 'slack'
+cask 'spotify'
+cask 'firefox'
+cask 'ghostty'
+cask 'claude'
+cask 'messenger'
+cask 'docker'
+cask 'hammerspoon'
