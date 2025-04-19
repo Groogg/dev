@@ -6,7 +6,7 @@ $(HOME)/.%: %
 
 zsh: $(HOME)/.zshrc $(HOME)/.zsh_profile
 
-$(HOME)/.hammerspoon:
+$(HOME)/.hammerspoon/init.lua:
 	mkdir -p $(HOME)/.hammerspoon
 	ln -sfn $(DOTFILE_PATH)/hammerspoon_init.lua $(HOME)/.hammerspoon/init.lua
 

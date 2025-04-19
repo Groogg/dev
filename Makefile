@@ -22,4 +22,4 @@ nvim:
 	rm -rf "$(CONFIG_PATH)/nvim"
 	git clone https://github.com/nvim-lua/kickstart.nvim.git "$(CONFIG_PATH)/nvim"
 	
-run: brew dot apple uv
+run: brew dot apple uv nvim
