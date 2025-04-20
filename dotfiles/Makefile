@@ -5,6 +5,7 @@ $(HOME)/.%: %
 	ln -sf $(DOTFILE_PATH)/$^ $@
 
 zsh: $(HOME)/.zshrc $(HOME)/.zsh_profile
+git: $(HOME)/.gitconfig $(HOME)/.githelpers $(HOME)/.gitignore
 
 $(HOME)/.hammerspoon/init.lua:
 	mkdir -p $(HOME)/.hammerspoon

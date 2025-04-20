@@ -1,22 +1,68 @@
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# Vim
+###############
+# KEY BINDINGS
+###############
+
+# python
+alias python='python3'
+
+# Vim 
 alias vim='nvim'
 
-# Git
-alias gl='git pull'
-alias gp='git push'
-alias gpu='git push -u origin "$(git branch --show-current)"'
-alias gpf='git push --force'
-alias gst='git stash'
-alias gs='git status'
-alias gb='git branch'
-alias gco='git checkout'
-alias gcb='git checkout -b'
-alias gd='git diff'
-alias ga='git add'
-alias gaa='git add .'
-alias gc='git commit'
-alias gcm='git commit -m'
+##########
+# Aliases
+#########
 
+# Edit configs
+alias ez='vim ~/.zsh_profile'
+alias sz='source ~/.zshrc'
+alias rdev='cd ~/personal/dev && make run'
+alias edev='vim ~/personal/dev'
+
+# Git
+alias gst='git status'
+alias s='git status'
+alias gaa='git add -A'
+alias gc='git commit'
+alias gcm='git checkout main'
+alias gd='git diff'
+alias gdc='git diff --cached'
+# [c]heck [o]ut
+alias co='git checkout'
+# [f]uzzy check[o]ut
+fo() {
+  git branch --no-color --sort=-committerdate --format='%(refname:short)' | fzf --header 'git checkout' | xargs git checkout
+}
+# [p]ull request check[o]ut
+po() {
+  gh pr list --author "@me" | fzf --header 'checkout PR' | awk '{print $(NF-5)}' | xargs git checkout
+}
+alias up='git push'
+alias upf='git push --force'
+alias pu='git pull'
+alias pur='git pull --rebase'
+alias fe='git fetch'
+alias re='git rebase'
+alias lr='git log -30'
+
+# ceedee dot dot dot
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../..'
+
+##########
+# FUNCTIONS
+##########
+
+mkdircd() {
+  mkdir -p $1 && cd $1
+}
+
+serve() {
+  local port=${1:-8000}
+  local ip=$(ipconfig getifaddr en0)
+  echo "Serving on ${ip}:${port} ..."
+  python -m http.server ${port}
+}
