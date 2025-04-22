@@ -7,6 +7,11 @@ $(HOME)/.%: %
 zsh: $(HOME)/.zshrc $(HOME)/.zsh_profile
 git: $(HOME)/.gitconfig $(HOME)/.githelpers $(HOME)/.gitignore
 
+$(HOME)/.config/nvim/lua/custom/plugins/init.lua:
+	ln -sfn $(DOTFILE_PATH)/custom_init.lua $(HOME)/.config/nvim/lua/custom/plugins/init.lua
+
+nvim: $(HOME)/.config/nvim/lua/custom/plugins/init.lua
+
 $(HOME)/.hammerspoon/init.lua:
 	mkdir -p $(HOME)/.hammerspoon
 	ln -sfn $(DOTFILE_PATH)/hammerspoon_init.lua $(HOME)/.hammerspoon/init.lua
@@ -29,4 +34,4 @@ $(HOME)/.config/ghostty/config:
 
 ghostty: $(HOME)/.config/ghostty/config
 
-all: zsh hammerspoon zed ghostty
+all: zsh hammerspoon zed ghostty nvim

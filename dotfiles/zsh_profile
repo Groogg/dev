@@ -9,8 +9,9 @@ source <(fzf --zsh)
 alias python='python3'
 
 # Vim 
-alias vim='nvim'
+alias v='nvim'
 
+alias vim='nvim'
 ##########
 # Aliases
 #########
