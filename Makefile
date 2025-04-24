@@ -27,3 +27,7 @@ nvim:
 
 
 run: brew nvim dot apple uv
+
+git-update:
+	cd nvim && git add . && git commit -m "automated dev commit" || echo "No changes to commit in nvim repo" && git push
+	git add . && git commit -m "automated dev commit" || echo "No changes to commit in dev repo" && git push

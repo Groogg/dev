@@ -2,9 +2,9 @@
   {
     "context": "EmptyPane || SharedScreen || vim_operator == none && !VimWaiting && vim_mode != insert",
     "bindings": {
-      "space s o": "projects::OpenRecent",
-      "space s t": "tab_switcher::Toggle",
-      "space s f": "file_finder::Toggle",
+      "space f p": "projects::OpenRecent",
+      "space f t": "tab_switcher::Toggle",
+      "space f f": "file_finder::Toggle",
       "space r": "task::Rerun",
       "space r e": ["task::Rerun", { "reevaluate_context": true }]
     }
