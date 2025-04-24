@@ -12,9 +12,6 @@ alias python='python3'
 alias v='nvim'
 alias vim='nvim'
 
-# Zed
-alias zed="open -a /Applications/Zed.app -n"
-
 ##########
 # Aliases
 #########

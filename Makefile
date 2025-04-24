@@ -8,6 +8,8 @@ brew:
 		echo "Homebrew already installed"; \
 	fi
 
+	brew bundle
+
 dot:
 	$(MAKE) -C dotfiles all
 
