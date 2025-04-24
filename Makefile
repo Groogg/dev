@@ -22,9 +22,8 @@ uv:
 nvim:
 	git submodule init
 	git submodule update
-	[ -d "$(CONFIG_PATH)/nvim" ] && mv "$(CONFIG_PATH)/nvim" "$(CONFIG_PATH)/nvim.backup" || true
+	rm -rf "$(CONFIG_PATH)/nvim"
 	ln -sf "$(PWD)/nvim" "$(CONFIG_PATH)/nvim"
-
 
 run: brew nvim dot apple uv
 
