@@ -19,5 +19,21 @@
         "model": "claude-3-5-sonnet-latest"
       },
       "version": "2"
+    },
+  "ui_font_family": "Fira Code",
+    "buffer_font_family": "Fira Code",
+    "buffer_line_height": {
+      "custom": 1.25
+    },
+  "terminal": {
+      "dock": "bottom",
+      "font_size": 15,
+      "font_family": "Fira Code",
+      "line_height": {
+        "custom": 1.25
+      },
+      "env": {
+        "GIT_EDITOR": "zed --wait"
+      }
     }
 }

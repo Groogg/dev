@@ -5,9 +5,14 @@
       "space s o": "projects::OpenRecent",
       "space s t": "tab_switcher::Toggle",
       "space s f": "file_finder::Toggle",
-      "space s r": "search::ToggleReplace",
       "space r": "task::Rerun",
       "space r e": ["task::Rerun", { "reevaluate_context": true }]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "shift-y": ["workspace::SendKeystrokes", "y $"]
     }
   },
   {
@@ -16,7 +21,39 @@
       "g r a": "editor::FindAllReferences",
       "g a": "editor::ToggleCodeActions",
       "g r": "editor::Rename",
-      "space w": "workspace::Save"
+      "g ]": "editor::GoToDiagnostic",
+      "g [": "editor::GoToPrevDiagnostic",
+      "space w": "workspace::Save",
+      "j": [
+        "vim::Down",
+        {
+          "displayLines": true
+        }
+      ],
+      "k": [
+        "vim::Up",
+        {
+          "displayLines": true
+        }
+      ],
+      "-": "pane::RevealInProjectPanel"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !VimCount",
+    "bindings": {
+      "0": [
+        "vim::StartOfLine",
+        {
+          "displayLines": true
+        }
+      ],
+      "$": [
+        "vim::EndOfLine",
+        {
+          "displayLines": true
+        }
+      ]
     }
   }
 ]

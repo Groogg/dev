@@ -8,18 +8,22 @@ brew:
 		echo "Homebrew already installed"; \
 	fi
 
-dot: 
+dot:
 	$(MAKE) -C dotfiles all
 
 apple:
 	xcode-select --install || true
 	softwareupdate --install rosetta
 
-uv: 
+uv:
 	curl -LsSf https://astral.sh/uv/install.sh | sh
 
+.PHONY: nvim
 nvim:
-	rm -rf "$(CONFIG_PATH)/nvim"
-	git clone https://github.com/nvim-lua/kickstart.nvim.git "$(CONFIG_PATH)/nvim"
-	
-run: brew dot apple uv nvim
+	git submodule init
+	git submodule update
+	[ -d "$(CONFIG_PATH)/nvim" ] && mv "$(CONFIG_PATH)/nvim" "$(CONFIG_PATH)/nvim.backup" || true
+	ln -sf "$(PWD)/nvim" "$(CONFIG_PATH)/nvim"
+
+
+run: brew nvim dot apple uv

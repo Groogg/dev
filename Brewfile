@@ -2,6 +2,7 @@ brew 'git'
 brew 'zsh'
 brew 'make'
 brew 'fzf'
+brew 'node'
 
 cask 'slack'
 cask 'spotify'
@@ -11,3 +12,6 @@ cask 'claude'
 cask 'messenger'
 cask 'docker'
 cask 'hammerspoon'
+
+# fonts
+cask 'font-fira-code'

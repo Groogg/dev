@@ -10,8 +10,8 @@ alias python='python3'
 
 # Vim 
 alias v='nvim'
-
 alias vim='nvim'
+
 ##########
 # Aliases
 #########
