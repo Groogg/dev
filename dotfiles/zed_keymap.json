@@ -5,6 +5,7 @@
       "space f p": "projects::OpenRecent",
       "space f t": "tab_switcher::Toggle",
       "space f f": "file_finder::Toggle",
+      "space f g": "pane::DeploySearch",
       "space r": "task::Rerun",
       "space r e": ["task::Rerun", { "reevaluate_context": true }]
     }

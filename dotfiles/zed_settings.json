@@ -29,11 +29,9 @@
       "dock": "bottom",
       "font_size": 15,
       "font_family": "Fira Code",
-      "line_height": {
         "custom": 1.25
       },
       "env": {
         "GIT_EDITOR": "zed --wait"
       }
-    }
 }

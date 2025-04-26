@@ -12,7 +12,7 @@ cask 'claude'
 cask 'messenger'
 cask 'docker'
 cask 'hammerspoon'
-cask 'zed'
+cask 'zed@preview'
 
 # fonts
 cask 'font-fira-code'
