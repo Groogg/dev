@@ -21,6 +21,7 @@ alias ez='vim ~/.zsh_profile'
 alias sz='source ~/.zshrc'
 alias rdev='cd ~/personal/dev && make run'
 alias edev='vim ~/personal/dev'
+alias cddev='cd ~/personal/dev/'
 
 # Git
 alias gst='git status'
