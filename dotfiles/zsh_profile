@@ -17,11 +17,12 @@ alias vim='nvim'
 #########
 
 # Edit configs
-alias ez='vim ~/.zsh_profile'
+alias ez='nvim ~/.zsh_profile'
 alias sz='source ~/.zshrc'
 alias rdev='cd ~/personal/dev && make run'
-alias edev='vim ~/personal/dev'
+alias edev='nvim ~/personal/dev'
 alias cddev='cd ~/personal/dev/'
+alias n='nvim ~/personal/dev/notes.md'
 
 # Git
 alias gst='git status'
