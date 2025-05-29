@@ -1,0 +1,12 @@
+theme = jubi
+font-size=16
+background-opacity=0.75
+background-blur = true
+
+shell-integration = zsh
+shell-integration-features = no-cursor,no-sudo,no-title
+
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
