@@ -20,7 +20,7 @@ source <(fzf --zsh)
 alias python='python3'
 
 # Edit configs
-alias ez='zed ~/.zsh_profile'
+alias ez='zed ~/.zshrc'
 alias sz='source ~/.zshrc'
 alias rd='cd ~/personal/dev && make run'
 alias ed='zed ~/personal/dev'
