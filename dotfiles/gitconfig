@@ -3,7 +3,7 @@
   email = gregg.gilbert@ivadolabs.com
 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/gregg.gilbert/.gitignore
 
 [push]
 	default = current

@@ -6,6 +6,7 @@ $(HOME)/.%: %
 
 zsh: $(HOME)/.zshrc
 git: $(HOME)/.gitconfig $(HOME)/.gitignore
+	git config --global core.excludesfile "$HOME/.gitignore"
 
 $(HOME)/.config/ghostty/config:
 	mkdir -p $(HOME)/.config/ghostty
