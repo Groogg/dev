@@ -1,0 +1,25 @@
+[user]
+  name = Gregg Gilbert
+  email = gregg.gilbert@ivadolabs.com
+
+[core]
+  excludesfile = ~/.gitignore
+
+[push]
+	default = current
+	followTags = true
+	
+[remote]
+  pushDefault = origin
+
+[branch]
+	autosetuprebase = always
+	
+[commit]
+	verbose = true
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = true

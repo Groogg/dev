@@ -1,0 +1,6 @@
+.DS_Store
+.venv
+.env
+.mypy_cache
+.tool-versions
+.idea
