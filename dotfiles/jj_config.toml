@@ -26,6 +26,7 @@ retrunk = ["rebase", "-d", "trunk()"]
 "format_timestamp(timestamp)" = "timestamp.ago()"
 
 [ui]
+paginate = "never"
 default-command = "log"
 diff-editor = ":builtin"
 merge-editor = ":builtin"
